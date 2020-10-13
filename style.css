@@ -1,0 +1,33 @@
+/*
+  NOTE PLEASE DESIGN FOR MOBILE FIRST!
+  RESIZE YOUR BROWSER TO MOBILE WIDTH!
+*/
+
+
+/* SECTION GLOBAL */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+/* !SECTION GLOBAL END */
+
+
+
+/* SECTION MOBILE VERSION GOES HERE */
+
+/* !SECTION MOBILE VERSION END */
+
+
+
+
+/* SECTION RESPONSIVE FOR DESKTOP VERSION */
+@media only screen and(min-width: 768px){
+
+}
+/* !SECTION RESPONSIVE FOR DESKTOP VERSION END */
