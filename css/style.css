@@ -22,7 +22,7 @@ body{
   padding: 15px 30px;
   background-color: #346AD3;
   border-radius: 15px;
-  width: 70%;
+  width: 70vw;
   margin: auto;
 }
 
@@ -75,7 +75,7 @@ body{
 
 /* SECTION HEADER */
 header{
-  background-image: url('./img/Hero.jpg');
+  background-image: url('../img/Hero.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@ header .container .hamburger{
 }
 
 header .container .tagline{
-  padding-top: 200px;
+  padding-top: 30vh;
   margin: 0 auto;
   text-align: center;
 }
@@ -127,59 +127,48 @@ header .container .message{
 
 header .cta{
   margin-top: 50px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+header .cta:hover{
+  background-color: #567ece;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .15);
 }
 /* !SECTION HEADER END */
 
-/* !SECTION MOBILE VERSION END */
 
+/* SECTION ABOUT */
 
-/* SECTION RESPONSIVE FOR DESKTOP VERSION */
-
-@media(min-width: 768px){
-
-  /* SECTION GLOBAL FOR DESKTOP */
-  .btn{
-    width: 250px;
-  }
-
-  .h1{
-    font-size: 40px;
-  }
-  
-  .h2{
-    font-size: 35px;
-  }
-  /* !SECTION GLOBAL FOR DESKTOP END */
-
-  /* SECTION HEADER DESKTOP */
-  header{
-    padding-bottom: 300px;
-  }
-
-  header .container nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-  }
-
-  header .container nav .links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
-  }
-  
-  header .container nav .links a{
-    color: white;
-    text-decoration: none;
-  }
-
-  header .container .hamburger{
-    display: none;
-  }
-  /* !SECTION HEADER DESKTOP END */
-
+#about{
+  color: black;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 100px;
 }
 
-/* !SECTION RESPONSIVE FOR DESKTOP VERSION END */
+.case{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+}
+
+.case .message{
+  /* margin: auto; */
+  padding: 40px;
+}
+
+.case .message .answer{
+  margin-top: 20px;
+}
+
+.case .illustration img{
+  width: 80vw;
+}
+
+/* !SECTION ABOUT END */
+
+/* !SECTION MOBILE VERSION END */
