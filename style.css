@@ -7,27 +7,179 @@
 /* SECTION GLOBAL */
 body{
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: normal;
+  font-weight: 300;
+}
+
+.btn{
+  text-decoration: none;
+  padding: 15px 30px;
+  background-color: #346AD3;
+  border-radius: 15px;
+  width: 70%;
+  margin: auto;
+}
+
+.btn a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Box and Text shadow. */
+.b-shadow{
+  box-shadow: 0 5px 7px rgba(0, 0, 0, .15);
+}
+
+.t-shadow{
+  text-shadow: 0 4px 5px rgba(0, 0, 0, .15);
+}
+
+.h1{
+  font-size: 6.5vw;
+}
+
+.h2{
+  font-size: 5vw;
+}
+
+.h3{
+  font-size: 4vw;
+}
+
+/* Font weights. Default is 300 (extra light). */
+.regular{
+  font-weight: 400;
+}
+
+.semi-bold{
+  font-weight: 500;
+}
+
+.bold{
+  font-weight: 600;
+}
+
+.extra{
+  font-weight: 700;
 }
 /* !SECTION GLOBAL END */
 
 
-
 /* SECTION MOBILE VERSION GOES HERE */
+
+/* SECTION HEADER */
+header{
+  background-image: url('./img/Hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+header::after{
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: 0;
+}
+
+header .container{
+  position: relative;
+  z-index: 1;
+}
+
+header .container nav{
+  display: none;
+}
+
+header .container .hamburger{
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+header .container .tagline{
+  padding-top: 200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header .tagline span{
+  color: #83C2FC;
+}
+
+header .container .message{
+  margin-top: 20px;
+}
+
+header .cta{
+  margin-top: 50px;
+}
+/* !SECTION HEADER END */
 
 /* !SECTION MOBILE VERSION END */
 
 
-
-
 /* SECTION RESPONSIVE FOR DESKTOP VERSION */
-@media only screen and(min-width: 768px){
+
+@media(min-width: 768px){
+
+  /* SECTION GLOBAL FOR DESKTOP */
+  .btn{
+    width: 250px;
+  }
+
+  .h1{
+    font-size: 40px;
+  }
+  
+  .h2{
+    font-size: 35px;
+  }
+  /* !SECTION GLOBAL FOR DESKTOP END */
+
+  /* SECTION HEADER DESKTOP */
+  header{
+    padding-bottom: 300px;
+  }
+
+  header .container nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  header .container nav .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+  }
+  
+  header .container nav .links a{
+    color: white;
+    text-decoration: none;
+  }
+
+  header .container .hamburger{
+    display: none;
+  }
+  /* !SECTION HEADER DESKTOP END */
 
 }
+
 /* !SECTION RESPONSIVE FOR DESKTOP VERSION END */
