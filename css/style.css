@@ -5,7 +5,7 @@
 
 
 /* SECTION GLOBAL */
-body{
+body, html{
   font-family: 'Montserrat', sans-serif;
   color: white;
 }
@@ -75,8 +75,10 @@ body{
 
 /* SECTION HEADER */
 header{
+  overflow-y: hidden;
   background-image: url('../img/Hero.jpg');
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -154,6 +156,9 @@ header .cta:hover{
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: 1s;
 }
 
 .case .message{
@@ -169,6 +174,73 @@ header .cta:hover{
   width: 80vw;
 }
 
+.case.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* !SECTION ABOUT END */
+
+
+/* SECTION SERVICE */
+
+main{
+  padding-top: 50px;
+  color: black;
+  padding-bottom: 200px;
+}
+
+main .container .heading{
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 95%;
+  margin: 0 auto;  
+}
+
+.card{
+  padding: 20px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+  margin-top: 30px;
+  border-radius: 20px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .15);
+}
+
+.card .message h1{
+  font-size: 20px;
+}
+
+.card .message h2{
+  font-size: 15px;
+}
+
+.card .message .description{
+  margin-top: 10px;
+}
+
+main .more{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.more a{
+  color: black;
+}
+
+/* !SECTION SERVICE END */
 
 /* !SECTION MOBILE VERSION END */
