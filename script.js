@@ -2,7 +2,7 @@
 let tagline = document.querySelector('.tagline');
 let about = document.querySelector('#about');
 let cases = document.querySelectorAll('.case');
-let links = document.querySelectorAll('.links a');
+let links = document.querySelectorAll('a.go');
 
 // Event handler for scrolling.
 window.onscroll = function(){

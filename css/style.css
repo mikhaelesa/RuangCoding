@@ -3,6 +3,19 @@
   RESIZE YOUR BROWSER TO MOBILE WIDTH!
 */
 
+/* SECTION KEYFRAME */
+
+@keyframes floating{
+  from{
+    transform: translateY(0px);
+  }
+
+  to{
+    transform: translateY(-20px);
+  }
+}
+
+/* !SECTION KEYFRAME END */
 
 /* SECTION GLOBAL */
 body, html{
@@ -239,57 +252,89 @@ main .more{
 
 .more a{
   color: black;
+  font-size: 20px;
 }
 
 /* !SECTION SERVICE END */
 
 /* SECTION FOOTER */
-.footer {
-	width: 100%;
-	background-color: #222831;
-	padding: 40px 30px;
-	height: auto;
+
+footer{
+  background-color: #1f1f1f;
+  padding: 10vh 5vw;
+  position: relative;
 }
 
-.footer-logo {
-	font-weight: normal;
-	font-size: 16px;
-	display: block;
-	float: left;
-	margin-bottom: 10px;
-}
-.footer-inc {
-  margin-top: 5px;
-  font-size: 10px;
-	float: right;
+.footer-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-hr {
-	clear: both;
-	top: 5px;
-	border: 1px solid #fff;
+.footer-title h2{
+  font-size: 18px;
 }
 
-.footer-contents {
-	margin-top: 40px;
+.footer-title p{
+  font-size: 13px;
 }
-.content {
-	width: auto;
-	/* float: left; */
-	margin-top: 30px;
+
+footer hr{
+  margin-top: 10px;
 }
-.content .content-title {
-	font-size: 14px;
-	margin-bottom: 17px;
+
+.footer-contents{
+  display: flex;
+  flex-direction: column;
 }
-.content .content-sub {
-	font-size: 11px;
-	line-height: 14px;
+
+.footer-contents .content{
+  margin-top: 20px;
 }
-.content a {
-	text-decoration: none;
-	color: #fff;
+
+.footer-contents .content h2{
+  font-size: 15px;
 }
+
+.footer-contents .content p, a{
+  font-size: 13px;
+}
+
+.content .content-title{
+  margin-bottom: 5px;
+}
+
+.content .content-sub{
+  margin-top: 10px;
+}
+
+.content:nth-child(3){
+  display: flex;
+  flex-direction: column;
+}
+
+.content a{
+  color: white;
+  text-decoration: none;
+}
+
+footer .to-top{
+  background-color: white;  
+  border-radius: 50%;
+  position: absolute;
+  right: 5vw;
+  bottom: 5vh;
+  text-align: center;
+  animation: floating 1s alternate infinite ease-in-out;
+}
+
+footer .to-top a{
+  color: #1f1f1f;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 10px 20px;
+}
+
 /* !SECTION FOOTER END */
 
 /* !SECTION MOBILE VERSION END */

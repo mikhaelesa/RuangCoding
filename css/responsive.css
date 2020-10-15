@@ -95,40 +95,33 @@
 	}
 	/* !SECTION SERVICES DESKTOP END */
 
-	/* section footer */
-	.footer {
-		padding: 70px 50px;
-		height: 350px;
+	/* SECTION FOOTER */
+	
+	.footer-title h2 {
+		font-size: 24pt;
 	}
 
-	.footer-logo {
-		font-weight: normal;
-		font-size: 28px;
-		display: block;
-		float: left;
-		margin-bottom: 10px;
-	}
-	.footer-inc {
-		margin-top: 10px;
-		font-size: 14px;
-		float: right;
+	.footer-title p{
+		font-size: 15pt;
 	}
 
-	.content {
-		width: auto;
-		float: left;
-		margin-right: 50px;
-	}
-	.content .content-title {
-		font-size: 18px;
-		margin-bottom: 25px;
-	}
-	.content .content-sub {
-		font-size: 14px;
-		line-height: 30px;
+	.footer-contents{
+		flex-direction: row;
 	}
 
-	/* !section footer end */
+	.footer-contents .content{
+		margin-right: 40px;
+	}
+
+	.footer-contents .content h2{
+		font-size: 15pt;
+	}
+
+	.footer-contents .content p, a{
+		font-size: 12pt;
+	}
+
+	/* !SECTION FOOTER END */
 }
 
 /* !SECTION RESPONSIVE FOR DESKTOP VERSION END */
