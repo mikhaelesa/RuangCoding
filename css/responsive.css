@@ -1,103 +1,134 @@
 /* SECTION RESPONSIVE FOR DESKTOP VERSION */
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
+	/* SECTION GLOBAL FOR DESKTOP */
+	.btn {
+		width: 30vw;
+	}
 
-  /* SECTION GLOBAL FOR DESKTOP */
-  .btn{
-    width: 30vw;
-  }
+	.h1 {
+		font-size: 4.5vw;
+	}
 
-  .h1{
-    font-size: 4.5vw;
-  }
-  
-  .h2{
-    font-size: 3vw;
-  }
+	.h2 {
+		font-size: 3vw;
+	}
 
-  /* !SECTION GLOBAL FOR DESKTOP END */
+	/* !SECTION GLOBAL FOR DESKTOP END */
 
-  /* SECTION HEADER DESKTOP */
-  header{
-    padding-bottom: 300px;
-  }
+	/* SECTION HEADER DESKTOP */
+	header {
+		padding-bottom: 300px;
+	}
 
-  header .container nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-  }
+	header .container nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 10px;
+	}
 
-  header .container nav .links{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 40%;
-  }
-  
-  header .container nav .links a{
-    color: white;
-    text-decoration: none;
-  }
+	header .container nav .links {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 40%;
+	}
 
-  header .container .hamburger{
-    display: none;
-  }
-  /* !SECTION HEADER DESKTOP END */
+	header .container nav .links a {
+		color: white;
+		text-decoration: none;
+	}
 
+	header .container .hamburger {
+		display: none;
+	}
+	/* !SECTION HEADER DESKTOP END */
 
-  /* SECTION ABOUT DESKTOP */
+	/* SECTION ABOUT DESKTOP */
 
-  .case{
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.case {
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .case .message h1{
-    font-size: 3vw;
-  }
-  
-  .case .message h2{
-    font-size: 2vw;
-  }
+	.case .message h1 {
+		font-size: 3vw;
+	}
 
-  .case .illustration img{
-    width: 40vw;
-  }
+	.case .message h2 {
+		font-size: 2vw;
+	}
 
-  .case:nth-child(2) .illustration{
-    order: 1;
-  }
+	.case .illustration img {
+		width: 40vw;
+	}
 
-  .case:nth-child(2) .message{
-    order: 2;
-  }
+	.case:nth-child(2) .illustration {
+		order: 1;
+	}
 
-  /* !SECTION ABOUT DESKTOP END */
+	.case:nth-child(2) .message {
+		order: 2;
+	}
 
+	/* !SECTION ABOUT DESKTOP END */
 
-  /* SECTION SERVICES DESKTOP */
+	/* SECTION SERVICES DESKTOP */
 
-  main .container .cards{
-    flex-direction: row;
-  }
+	main .container .cards {
+		flex-direction: row;
+	}
 
-  .card{
-    flex-direction: column;
-    text-align: center;
-  }
+	.card {
+		flex-direction: column;
+		text-align: center;
+	}
 
-  .card img{
-    order: 1;
-  }
-  
-  .card .message{
-    order: 2;
-  }
-  /* !SECTION SERVICES DESKTOP END */
+	.card img {
+		order: 1;
+	}
 
+	.card .message {
+		order: 2;
+	}
+	/* !SECTION SERVICES DESKTOP END */
+
+	/* section footer */
+	.footer {
+		padding: 70px 50px;
+		height: 350px;
+	}
+
+	.footer-logo {
+		font-weight: normal;
+		font-size: 28px;
+		display: block;
+		float: left;
+		margin-bottom: 10px;
+	}
+	.footer-inc {
+		margin-top: 10px;
+		font-size: 14px;
+		float: right;
+	}
+
+	.content {
+		width: auto;
+		float: left;
+		margin-right: 50px;
+	}
+	.content .content-title {
+		font-size: 18px;
+		margin-bottom: 25px;
+	}
+	.content .content-sub {
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+	/* !section footer end */
 }
 
 /* !SECTION RESPONSIVE FOR DESKTOP VERSION END */
