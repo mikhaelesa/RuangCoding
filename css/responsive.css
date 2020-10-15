@@ -16,33 +16,52 @@
 
 	/* !SECTION GLOBAL FOR DESKTOP END */
 
+	/* SECTION NAV DESKTOP */
+
+	nav .hamburger{
+		display: none;
+	}
+
+	nav .container{
+		position: absolute;
+		top: 10px;
+		height: unset;
+		right: unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		background-color: unset;
+	}
+
+	nav .logo{
+		margin-top: 0;
+	}
+
+	nav .logo h1{
+		font-size: 20pt;
+	}
+
+	nav .links a{
+		font-size: 12pt;
+	}
+
+	nav .container .links{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 30%;
+	}
+
+	/* !SECTION NAV DESKTOP END */
+
 	/* SECTION HEADER DESKTOP */
+
 	header {
 		padding-bottom: 300px;
 	}
 
-	header .container nav {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		padding: 10px;
-	}
-
-	header .container nav .links {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		width: 40%;
-	}
-
-	header .container nav .links a {
-		color: white;
-		text-decoration: none;
-	}
-
-	header .container .hamburger {
-		display: none;
-	}
 	/* !SECTION HEADER DESKTOP END */
 
 	/* SECTION ABOUT DESKTOP */

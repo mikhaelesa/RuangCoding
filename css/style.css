@@ -21,6 +21,7 @@
 body, html{
   font-family: 'Montserrat', sans-serif;
   color: white;
+  overflow-x: hidden;
 }
 
 *{
@@ -86,6 +87,59 @@ body, html{
 
 /* SECTION MOBILE VERSION GOES HERE */
 
+/* SECTION NAV */
+
+nav{
+  position: relative;
+  z-index: 10;
+}
+
+nav .container{
+  position: fixed;
+  right: -490px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #346AD3;
+  transition: .5s;
+}
+
+nav .container.slide{
+  right: 0;
+}
+
+nav .logo{
+  margin-top: 100px;
+}
+
+nav .logo h1{
+  font-size: 4vw;
+}
+
+nav .links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+
+nav .links a{
+  color: white;
+  text-decoration: none;
+  font-size: 3vw;
+}
+
+nav .hamburger{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+/* !SECTION NAV END */
+
 /* SECTION HEADER */
 header{
   overflow-y: hidden;
@@ -112,18 +166,9 @@ header::after{
 }
 
 header .container{
+  top: 0;
   position: relative;
   z-index: 1;
-}
-
-header .container nav{
-  display: none;
-}
-
-header .container .hamburger{
-  position: fixed;
-  top: 10px;
-  right: 20px;
 }
 
 header .container .tagline{
